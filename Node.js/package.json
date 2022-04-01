@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "First Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-Rome4/VSCode-UAM.git"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "William-Rome4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/William-Rome4/VSCode-UAM/issues"
+  },
+  "homepage": "https://github.com/William-Rome4/VSCode-UAM#readme"
+}
