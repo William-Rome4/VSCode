@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FirstAngular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("calculate", []);
+        app.controller("CalcController", function ($scope) {
+            $scope.n1 = "";
+            $scope.n2 = "";
+        });
+    </script>
+</head>
+
+<body>
+    <div ng-app="calculate" ng-controller="CalcController">
+        <p>Calculator</p>
+
+        <input type="number" id="n1" placeholder="Number 1" ng-model="n1">
+        <input type="number" id="n2" placeholder="Number 2" ng-model="n2">
+
+        <br><br>
+
+        <div>
+            <h2>Addition:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{{n1}} + {{n2}} = {{n1+n2}} </h2>
+            <h2>Subtraction:&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;{{n1}} - {{n2}} = {{n1-n2}} </h2>
+            <h2>Multiplication:&ensp;&ensp;&ensp;{{n1}} * {{n2}} = {{n1*n2}} </h2>
+            <h2>Division:&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{{n1}} / {{n2}} = {{n1/n2}} </h2>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

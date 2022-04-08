@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 549px;
+    background-image: linear-gradient(to right,aqua, slateblue);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input {
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+input:hover {
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+div > p {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(71, 56, 165);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 4px black;
+}
+
+div > h2 {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

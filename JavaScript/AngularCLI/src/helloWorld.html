@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FirstAngular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+    var app = angular.module("helloWorld", []);
+    app.controller("HelloController", function ($scope) {
+      $scope.nome = "";
+      $scope.cpf = "";
+      $scope.email = "";
+    });
+  </script>
+</head>
+
+<body>
+  <div ng-app="helloWorld" ng-controller="HelloController">
+    <input type="text" id="nome" placeholder="Nome" ng-model="nome">
+    <input type="text" id="cpf" placeholder="CPF" ng-model="cpf">
+    <input type="text" id="email" placeholder="E-mail" ng-model="email">
+
+    <br><br>
+
+    <p>Nome: {{nome}}</p>
+    <p>CPF: {{cpf}}</p>
+    <p>E-mail: {{email}}</p>
+
+  </div>
+
+</body>
+
+</html>
