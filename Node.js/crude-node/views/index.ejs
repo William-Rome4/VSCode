@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<div id="container">
+<div id="cabecalho" role="header">
+            <h1>Page title</h1>
+        </div>
+
+        <div id="coluna1" role="article">
+            <figure>
+                <img src="img/img.png">
+                <figcaption>
+                    <h3>News</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Nisi, perferendis hic id placeat natus accusantium sapiente
+                        ut laborum quis ea dolores sed
+                        quibusdam. Aperiam eaque in ipsa dolorem explicabo dolor.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="coluna2" role="main">
+            <h1>Payment</h1>
+            <form action="/show" method="POST">
+                <div>
+                    <input type="text" placeholder="Full name" name="nome">
+                </div>
+                <div>
+                    <input type="date" name="data">
+                    <input type="time" name="hora ">
+                </div>
+                <div>
+                    <input type="text" name="serviço" placeholder="Input the service">
+                </div>
+                <div>
+                    <select name="forma_pagamento">
+                        <option value="card">Credit Card</option>
+                        <option value="pix">Pix</option>
+                        <option value="dinheiro">Cash</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" name="bt_agendar">Schedule</button>
+                </div>
+            </form>
+        </div>
+<div id="rodape" role="contentinfo">
+            <h6>Footer</h6>
+        </div>
+
+    </div> <!-- container end -->
+
+</body>
+
+</html>
