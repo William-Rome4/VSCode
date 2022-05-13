@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      It works!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <style>
+    .blue {
+      color: blue
+    }
+
+    .custom {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+
+    .yellow {
+      color: rgb(99, 72, 5);
+      background-color: yellow;
+      font-size: 18px;
+      border-radius: 5px;
+      position: absolute;
+    }
+
+    .orange {
+      color: lightcoral;
+      background-color: darkslateblue;
+      font-size: 18px;
+      border-radius: 5px;
+      position: absolute;
+    }
+
+    .green {
+      color: green;
+      background-color: darkseagreen;
+      font-size: 18px;
+      border-radius: 5px;
+      position: absolute;
+    }
+
+    .end {
+      color: white;
+      background-color: green;
+      font-size: 18px;
+      border-radius: 5px;
+      position: absolute;
+    }
+  </style>
+
+  <p [ngClass]="{'blue':true}" class="ion-padding">
+    This text is blue
+  </p>
+  <h1 class="ion-padding"> Testing ngIf</h1>
+  <h3 class="ion-padding"> Your grade is {{grade}} </h3>
+  <ion-card color="danger" *ngIf="grade < 6; else pass">
+    <ion-card-content>
+      You need to retake the exam.
+    </ion-card-content>
+  </ion-card>
+
+  <ng-template #pass>
+    <ion-card color="success" class="ion-padding">
+      <ion-card-content [ngClass]="{'custom':true}">
+        You passed!
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+  <br>
+
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let product of products">
+      <ion-label>
+        {{product.name}} - {{product.price}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <br>
+
+  <div [ngSwitch]="status" class="ion-padding">
+    <p *ngSwitchCase="'preparing'" [ngClass]="{'yellow':true}">
+      Order being prepared.
+    </p>
+    <p *ngSwitchCase="'onRoute'" [ngClass]="{'orange':true}">
+      Order on transit.
+    </p>
+    <p *ngSwitchCase="'delivered'" [ngClass]="{'green':true}">
+      Order delivered.
+    </p>
+    <p *ngSwitchCase="'finished'" [ngClass]="{'end':true}">
+      Order finished sucessfully.
+    </p>
+    <p *ngSwitchDefault color="danger"> 
+      Error.
+    </p>
+    <br><br>
+
+  </div>
+
+  <br>
+</ion-content>
