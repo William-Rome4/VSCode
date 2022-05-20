@@ -1,0 +1,16 @@
+#center {
+  position: fixed;
+  padding-left: 87px;
+}
+
+p {
+  font-size: large;
+  color: paleturquoise;
+}
+
+ion-radio {
+  --border-radius: 8px;
+  --color: #3880ff;
+  --color-checked: #3880ff;
+  --inner-border-radius: 2px
+}

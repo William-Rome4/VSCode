@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inserir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button color="batata" id="center" routerLink="/home">
+      <ion-icon name="arrow-undo-circle-outline" size="large"></ion-icon>
+    </ion-button>
+  </div>
+
+  <br><br>
+
+  <form [formGroup]="myForm">
+    <ion-item lines="full">
+      <ion-label position="floating">Nome do Item</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Número do Lote</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-radio-group lines="full">
+      <p class="ion-padding">É destinado a paciente?</p>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio slot="start" value="yes" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    
+  </form>
+
+  
+</ion-content>
