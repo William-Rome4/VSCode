@@ -26,4 +26,22 @@
   <ion-item>
     <ion-button routerLink="/about">Route to about</ion-button>
   </ion-item>
+
+  <!-- Menu starts here -->
+  <ion-menu contentId="content-name" menuId="menu-name" side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu title</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-item button routerLink="/about">
+        <ion-label>About</ion-label>
+      </ion-item>
+    </ion-content>
+
+  </ion-menu>
+  <!-- Menu ends here -->
+
 </ion-content>
