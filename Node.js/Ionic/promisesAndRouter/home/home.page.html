@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Alert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-button (click)="presentAlert()">Show Alert</ion-button>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button (click)="playWithSetTimeout()">Timeout</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="confirmClick()">Confirm</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-button routerLink="/about">Route to about</ion-button>
+  </ion-item>
+</ion-content>
